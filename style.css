@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Water+Brush&display=swap');
+
+@font-face {
+    font-family: 'Supravitally'; /* Choose a name for your font */
+    src: url('./fonts/supravitally.ttf') format('truetype');
+    /* Use the correct path to your .ttf file */
+}
+@font-face {
+    font-family: 'Nadien'; /* Choose a name for your font */
+    src: url('./fonts/Nadien.ttf') format('truetype');
+    /* Use the correct path to your .ttf file */
+}
+@font-face {
+    font-family: 'Rethinker Slant'; /* Choose a name for your font */
+    src: url('./fonts/Rethinker\ Slant.ttf') format('truetype');
+    /* Use the correct path to your .ttf file */
+}
+@font-face {
+    font-family: 'DM Sans'; /* Choose a name for your font */
+    src: url('./fonts/DMSans_36pt-Medium.ttf') format('truetype');
+    /* Use the correct path to your .ttf file */
+}
+@font-face {
+    font-family: 'Monosign'; /* Choose a name for your font */
+    src: url('./fonts/Monosign.ttf') format('truetype');
+    /* Use the correct path to your .ttf file */
+}
+
+body {
+    margin: 10px 60px 10px 60px;
+    padding: 0;
+    color: white;
+    background-color: #121212;
+    font-family: 'Poppins';
+}
+.section{
+    display: flex;
+    justify-content:center;
+}
+
+.nav-brand {
+    font-family: 'Monosign', cursive;
+    /* font-weight: 100; */
+    font-size:45px;
+    color:rgb(32, 158, 156) ;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem; /* Adjust padding as needed */
+ /* Add your desired background color */
+    color: white;
+    padding-right: 2%;
+     /* Add your desired text color */
+    
+}
+.nav-content ul {
+    list-style: none; /* Remove default list styles */
+    display: flex;
+    gap: 5rem; /* Adjust the gap between list items as needed */
+}
+
+.nav-content li {
+    cursor: pointer; /* Add cursor style for better UX */
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+    height: 70vh; /* Ensure the container takes the full height of the viewport */
+    margin: 0;
+    padding: 0; /* Remove default margin */
+}
+
+.container-text {
+    flex: 1; /* Take up available space */
+    text-align: left; /* Align text to the left within the flex container */
+    padding: 20px; /* Add padding for better spacing */
+    font-family: "Nadien",sans-serif;
+    font-size:40px ;
+}
+
+.illustration-container {
+    flex: 1; /* Take up available space */
+    float: right;
+    justify-content: end; /* Align text to the right within the flex container */
+    padding-left: 100px; /* Add padding for better spacing */
+ /* Add an outlined shadow */
+ /* Set the background color */
+}
+
+.illustration {
+    max-width: 90%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain the image aspect ratio */
+    display: flex; 
+    align-self: self-end;/* Remove any extra spacing caused by inline elements */
+}
+
+.text {
+    flex: 1; /* Take up available space */
+    text-align: left; /* Align text to the left within the flex container */
+    padding: 20px; /* Add padding for better spacing */
+    font-family: "Nadien",sans-serif;
+    font-size:40px ;
+}
+
+span
+{
+    color:rgb(32, 158, 156) ;
+}
+
+.active {
+    font-weight: bold;
+    color:rgb(32, 158, 156) ;
+}
+
+
+.footer-links-left,
+.footer-links-right {
+    display: flex;
+    font-family: 'DM Sans';
+    align-items: center; /* Add this line to align items vertically */
+}
+
+.footer-links-left a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease; /* Add transition property for smooth scaling */
+}
+
+.footer-links-left a:hover {
+    color: rgb(32, 158, 156);
+    transform: scale(1.2); /* Scale up to 110% on hover */
+}
+
+.footer-links-right p {
+    margin: 0;
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #121212;
+}
+
+
+a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease; /* Add transition property for smooth scaling */
+}
+
+a:hover {
+    color: rgb(32, 158, 156);
+    transform: scale(1.2); /* Scale up to 110% on hover */
+}
+
+/* About page style */
+
+.info-table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-bottom: 5%;
+}
+
+.left-column {
+    width: 50%;
+
+    padding: 10px 40px 10px 40px;
+    text-align: right;
+    vertical-align: top; 
+    color: rgb(32, 158, 156);
+    /* Align content at the top */
+}
+
+.left-column img {
+    padding: 0;
+    float: right;
+    width: 70%;
+}
+
+.right-column {
+    width: 50%;
+    background-color: #121212;
+    text-align: start;
+    vertical-align: top; /* Align content at the top */
+}
+
+.right-column .text {
+    padding: 10px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+.text {
+    padding: 20px;
+    font-family: "Nadien", sans-serif;
+    font-size: 18px;
+    width: 92%;
+    color: #333; /* Change color as needed */
+    line-height: 1.5; /* Adjust line height for better readability */
+}
+
+.text p {
+    margin-bottom: 10px;
+    margin-top: 0; /* Adjust margin between paragraphs */
+}
+.text .top-text{
+    font-family: "Nadien", sans-serif;
+}
+.text p:first-child {
+    margin-top: 0;
+}
+.top-text{
+    font-size: 40px;
+}
+
+/* style for projects */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card {
+    position: relative;
+    width: calc(40% - 10px); /* Adjust the width as needed for row-wise display */
+    margin: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    
+}
+
+.card .card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+}
+
+.card-body-text {
+    color: #fff;
+    font-family:'DM Sans' ;
+}
+
+.card .text {
+    padding: 20px;
+}
+
+.card:hover .card-body {
+    opacity: 1;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.card-button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: rgb(32, 158, 156);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #007BFF;
+}
