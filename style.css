@@ -11,8 +11,8 @@
     /* Use the correct path to your .ttf file */
 }
 @font-face {
-    font-family: 'Rethinker Slant'; /* Choose a name for your font */
-    src: url('./fonts/Rethinker\ Slant.ttf') format('truetype');
+    font-family: 'Seraphina'; /* Choose a name for your font */
+    src: url('./fonts/Seraphina/Seraphina-Script-Italic-BF65697c2c0bd96.otf') format('opentype');
     /* Use the correct path to your .ttf file */
 }
 @font-face {
@@ -23,6 +23,11 @@
 @font-face {
     font-family: 'Monosign'; /* Choose a name for your font */
     src: url('./fonts/Monosign.ttf') format('truetype');
+    /* Use the correct path to your .ttf file */
+}
+@font-face {
+    font-family: 'Rethinker Slant'; /* Choose a name for your font */
+    src: url('./fonts/Rethinker\ Slant.ttf') format('truetype');
     /* Use the correct path to your .ttf file */
 }
 
@@ -40,8 +45,8 @@ body {
 
 .nav-brand {
     font-family: 'Rethinker Slant', cursive;
-    /* font-weight: 100; */
-    font-size:45px;
+    font-weight: 500;
+    font-size:35px;
     color:rgb(32, 158, 156) ;
 
 }
@@ -292,4 +297,14 @@ a:hover {
 
 .card-button:hover {
     background-color: #007BFF;
+}
+
+.resume_link {
+    color: rgb(32, 158, 156) !important;
+    display: flex;
+    align-items: center;
+}
+
+.resume_link:hover {
+    transform: scale(1);
 }
